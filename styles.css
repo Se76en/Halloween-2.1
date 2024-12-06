@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('pumpkin.png') no-repeat center center fixed; /* Add your pumpkin background image */
+    background-size: cover; /* Ensure the background covers the entire page */
+    color: #eaeaea; /* Light text for contrast */
+}
+
+header {
+    background: rgba(255, 69, 0, 0.9); /* Semi-transparent bright orange for header */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    margin: 10px 0 30px;
+    font-size: 2em;
+}
+
+main {
+    padding: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #2a2a2a; /* Dark card background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.8), 0 0 30px rgba(255, 69, 0, 0.6); /* Glowing effect */
+}
+
+h3 {
+    color: #ff4500; /* Bright orange for card titles */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(51, 51, 51, 0.9); /* Semi-transparent dark footer */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.7);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Add some spooky font styles for headings */
+h1, h2, h3 {
+    font-family: 'Creepster', cursive; /* Spooky font for headings */
+}
+
+/* Add a link style */
+a {
+    color: #ff4500; /* Bright orange links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Brazilian Halloween section styles */
+.brazilian-halloween {
+    background: rgba(40, 40, 40, 0.8); /* Dark background for the Brazilian section */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.brazilian-halloween h2 {
+    color: #ff4500; /* Bright orange for section title */
+}
+
+.brazilian-halloween p {
+    margin: 10px 0;
+    color: #eaeaea; /* Light text for readability */
+}
+
+.brazilian-halloween ol {
+    padding-left: 20px; /* Indent for ordered list */
+}
+
+.brazilian-halloween li {
+    margin-bottom: 15px; /* Space between list items */
+}
+
+.brazilian-halloween ul {
+    padding-left: 20px; /* Indent for unordered list */
+}
+
+/* Additional styles for better readability */
+h4 {
+    color: #ff4500; /* Bright orange for subheadings */
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0; /* Consistent spacing for paragraphs */
+}
