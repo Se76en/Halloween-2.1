@@ -3,126 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Halloween Celebrations</title>
+    <title>Halloween Around the World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f4f4f4; /* Light text color */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/halloween-background.jpg'); /* Background image */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header {
+            background-image: url('https://example.com/header-background.jpg'); /* Header background image */
+            background-size: cover;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            border-bottom: 5px solid #ffcc00; /* Gold border */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            font-family: 'Fredericka the Great', cursive; /* Spooky font */
+        }
+        header h2 {
+            font-size: 1.8em;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+            position: relative;
+            overflow: hidden;
+        }
+        .usa-section {
+            border: 2px dashed #ff7518; /* Dashed border for USA */
+        }
+        .brazil-section {
+            border: 2px dashed #00cc66; /* Dashed border for Brazil */
+        }
+        .usa-section::before, .brazil-section::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            background-image: url('https://example.com/pumpkin-icon.png'); /* Pumpkin icon for USA */
+            background-size: cover;
+            opacity: 0.8;
+            z-index: 1;
+        }
+        .brazil-section::before {
+            background-image: url('https://example.com/saci-icon.png'); /* Saci icon for Brazil */
+        }
+        h2 {
+            color: #ff7518; /* Pumpkin orange */
+            border-bottom: 2px solid #ffcc00; /* Underline */
+            padding-bottom: 5px;
+            position: relative;
+            z-index: 2; /* Ensure text is above the icon */
+        }
+        h3 {
+            color: #ffcc00; /* Gold color for subheadings */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 5px solid #ff7518; /* Pumpkin orange border */
+        }
+        .spooky-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .pumpkin {
+            font-size: 2em;
+            color: #ff7518;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Halloween Celebrations Around the World</h1>
-    </header>
-    <main>
-        <section class="usa-halloween">
-            <h2>USA Halloween Traditions</h2>
-            <p><strong>Halloween Around the World</strong></p>
-            <h3>Customs & Symbols: How the USA Celebrates Halloween</h3>
-            <p>Let’s uncover the traditions that make Halloween a standout celebration in the United States.</p>
-            
-            <h4>Pumpkins Everywhere</h4>
-            <p>From decorations to desserts, pumpkins dominate the Halloween season. This tradition stems from the Irish legend of Jack O'Lantern, the crafty blacksmith who tricked the devil but was barred from both heaven and hell. Left to wander the earth with his lantern, Jack’s tale inspired the practice of carving lanterns.</p>
-            <p>Initially, turnips were used in Ireland, but in America, pumpkins—larger and easier to carve—became the new standard. Their bright orange color and abundance during fall sealed their place as a Halloween icon.</p>
-            
-            <div class="card-container">
-                <div class="card">
-                    <h3>Pumpkin Carving</h3>
-                    <p>Carving pumpkins into Jack O'Lanterns is a beloved tradition, symbolizing the spirit of Halloween.</p>
-                </div>
-                <div class="card">
-                    <h3>Pumpkin Spice</h3>
-                    <p>Pumpkin spice flavors dominate seasonal treats, from lattes to pies, celebrating the harvest.</p>
-                </div>
-            </div>
 
-            <h4>Over-the-Top Decorations</h4>
-            <p>Americans don’t just carve pumpkins—they transform their homes into haunted masterpieces. From spiderwebs and skeletons to makeshift graveyards, the Halloween decorating craze covers windows, fences, trees, and lawns. The classic colors orange and black represent the autumn harvest and death, respectively, amplifying the spooky atmosphere.</p>
-            
-            <div class="card-container">
-                <div class="card">
-                    <h3>Haunted Houses</h3>
-                    <p>Many neighborhoods create elaborate haunted houses, attracting thrill-seekers and families alike.</p>
-                </div>
-                <div class="card">
-                    <h3>Spooky Lights</h3>
-                    <p>Decorative lights in orange and purple create a festive and eerie ambiance during Halloween.</p>
-                </div>
-            </div>
+<header>
+    <h1>Halloween Around the World</h1>
+    <h2>USA & Brazil: Customs & Symbols</h2>
+</header>
 
-            <h4>Costumes Galore</h4>
-            <p>Halloween costumes are a beloved tradition that echoes the Samhain custom of disguising oneself to evade spirits. Early 20th-century pranksters also donned masks to conceal their identities.</p>
-            <p>Today, costumes have evolved into a creative and attention-grabbing art form. The scarier or more extravagant the outfit, the better! Many costumes even blend horror with playful sex appeal, showcasing an undeniably American twist.</p>
-            
-            <div class="card-container">
-                <div class="card">
-                    <h3>Costume Contests</h3>
-                    <p>Many communities host costume contests, rewarding the most creative and spooky outfits.</p>
-                </div>
-                <div class="card">
-                    <h3>DIY Costumes</h3>
-                    <p>Crafting homemade costumes is a popular activity, allowing for creativity and personalization.</p>
-                </div>
-            </div>
+<div class="section" style="
+    padding: 25px; 
+    margin: 20px; 
+    border-radius: 12px; 
+    background: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9); 
+    border: 3px solid #ffcc00; 
+    position: relative; 
+    overflow: hidden;">
+    <h2 style="
+        color: #ff7518; 
+        border-bottom: 2px solid #ffcc00; 
+        padding-bottom: 5px; 
+        font-size: 2.5em; 
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);">
+        Introduction
+    </h2>
+    <p style="
+        color: #f4f4f4; 
+        font-size: 1.2em; 
+        line-height: 1.8; 
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">
+        Across the globe, the eerie glow of jack-o’-lanterns and the rustle of costumes signal the arrival of Halloween. Yet, beyond the hauntingly familiar traditions of candy and costumes lies a world of unique celebrations steeped in folklore and local flavor. In this post, we’ll uncover the spine-tingling tales and festive customs that define Halloween in two very different corners of the world: the thrill-filled streets of the USA and the myth-laden traditions of Brazil. Get ready to dive into a celebration where ancient legends meet modern fun, proving that Halloween’s spirit knows no boundaries!
+    </p>
+</div>
 
-            <h4>Trick-or-Treating</h4>
-            <p>The phrase "trick or treat" captures the spirit of American Halloween. Children, dressed in costume, visit house after house demanding candy. This practice likely derives from the Celtic belief that leaving food outside appeased wandering spirits.</p>
-            <p>By the 1950s, the candy industry capitalized on the holiday, creating specialized sweets for Halloween. Today, sugary staples like candy corn and candy apples ensure that costumed visitors are rewarded for their efforts.</p>
-            
-            <div class="card-container">
-                <div class="card">
-                    <h3>Candy Corn</h3>
-                    <p>This iconic Halloween candy is a staple in many households during the season.</p>
-                </div class="card">
-                    <h3>Trick-or-Treat Bags</h3>
-                    <p>Children often carry themed bags to collect their candy, adding to the festive spirit.</p>
-                </div>
-            </div>
+<div class="usa-section section">
+    <h2>How the USA Celebrates Halloween</h2>
+    <p>Let’s uncover the traditions that make Halloween a standout celebration in the United States.</p>
 
-            <h4>Halloween Parties</h4>
-            <p>Halloween parties have become a popular way for adults and children alike to celebrate the holiday. These gatherings often feature themed decorations, spooky snacks, and costume contests. From haunted house parties to pumpkin carving contests, the festive spirit is alive and well in homes across the country.</p>
-            
-            <div class="card-container">
-                <div class="card">
-                    <h3>Spooky Snacks</h3>
-                    <p>Creative treats like "witches' fingers" and "mummy dogs" are popular at Halloween parties.</p>
-                </div>
-                <div class="card">
-                    <h3>Halloween Games</h3>
-                    <p>Games like bobbing for apples and Halloween trivia add fun to the celebrations.</p>
-                </div>
-            </div>
-        </section>
+    <h3>Pumpkins Everywhere <span class="pumpkin">🎃</span></h3>
+    <img src="carvedpumpkins.webp" alt="Pumpkins" class="spooky-image">
+    <p> From decorations to desserts, pumpkins dominate the Halloween season. This tradition stems from the Irish legend of Jack O'Lantern, the crafty blacksmith who tricked the devil but was barred from both heaven and hell. Left to wander the earth with his lantern, Jack’s tale inspired the practice of carving lanterns. Initially, turnips were used in Ireland, but in America, pumpkins—larger and easier to carve—became the new standard. Their bright orange color and abundance during fall sealed their place as a Halloween icon.</p>
 
-        <section class="brazilian-halloween">
-            <h2>Brazilian Halloween Traditions</h2>
-            <p><strong>BRAZIL</strong></p>
-            <ol>
-                <li>
-                    <strong>Saci Pererê Day</strong>
-                    <ul>
-                        <li><strong>Folklore Celebration:</strong> A very Brazilian twist on Halloween is the celebration of Saci Pererê, a beloved character from Brazilian folklore. Saci is a mischievous, one-legged creature known for playing pranks, wearing a red cap, and causing harmless trouble. On October 31st, Saci Pererê Day is celebrated alongside Halloween, especially in regions that embrace Brazilian traditions.</li>
-                        <li><strong>Activities:</strong> Children might dress up as Saci or other folklore characters like Cuca (a witch), Curupira (a forest guardian), or Boitatá (a fire serpent). There are storytelling sessions where families gather to share Saci’s tales and other folklore legends, keeping the Brazilian mythical world alive during Halloween.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Haunted Houses and Horror Experiences</strong>
-                    <ul>
-                        <li><strong>Brazilian Horror Shows:</strong> While theme parks like Hopi Hari and Beto Carrero World feature Halloween-themed events, there are also pop-up haunted houses that take a Brazilian horror approach. These might feature not just international ghosts, but folklore monsters like Zé do Caixão, a character from Brazilian horror films.</li>
-                        <li><strong>Immersive Experiences:</strong> Some cities, like São Paulo, organize immersive horror experiences where participants are fully engaged in spooky scenarios inspired by Brazilian myths and horror films. This could include a haunted forest experience based on A Ilha do Medo, a Brazilian horror story, or visits to abandoned colonial houses that are said to be haunted by ghosts from Brazil’s history.</li>
-                    </ul>
-                </li>
-            </ol>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Saci Pererê Day</h3>
-                    <p>A celebration of the mischievous one-legged character from Brazilian folklore, Saci Pererê, on October 31st.</p>
-                </div>
-                <div class="card">
-                    <h3>Haunted Houses and Horror Experiences</h3>
-                    <p>Experience Brazilian horror through pop-up haunted houses and immersive horror experiences inspired by folklore.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Made by Iurascu Iulian</p>
-    </footer>
+    <h3>Over-the-Top Decorations</h3>
+    <p>Americans don’t just carve pumpkins—they transform their homes into haunted masterpieces. From spiderwebs and skeletons to makeshift graveyards, the Halloween decorating craze covers windows, fences, trees, and lawns. The classic colors orange and black represent the autumn harvest and death, respectively, amplifying the spooky atmosphere.</p>
+
+    <h3>Costumes Galore</h3>
+    <p>Halloween costumes are a beloved tradition that echoes the Samhain custom of disguising oneself to evade spirits. Early 20th-century pranksters also donned masks to conceal their identities. Today, costumes have evolved into a creative and attention-grabbing art form. The scarier or more extravagant the outfit, the better! Many costumes even blend horror with playful sex appeal, showcasing an undeniably American twist.</p>
+
+    <h3>Trick-or-Treating</h3>
+    <p>The phrase "trick or treat" captures the spirit of American Halloween. Children, dressed in costume, visit house after house demanding candy. This practice likely derives from the Celtic belief that leaving food outside appeased wandering spirits. By the 1950s, the candy industry capitalized on the holiday, creating specialized sweets for Halloween. Today, sugary staples like candy corn and candy apples ensure that costumed visitors are rewarded for their efforts.</p>
+</div>
+
+<div class="brazil-section section">
+    <h2>Saci Pererê Day ● Folklore Celebration</h2>
+    <p>A very Brazilian twist on Halloween is the celebration of Saci Pererê, a beloved character from Brazilian folklore. Saci is a mischievous, one-legged creature known for playing pranks, wearing a red cap, and causing harmless trouble. On October 31st, Saci Pererê Day is celebrated alongside Halloween, especially in regions that embrace Brazilian traditions.</p>
+
+    <h3>Activities</h3>
+    <p>Children might dress up as Saci or other folklore characters like Cuca (a witch), Curupira (a forest guardian), or Boitatá (a fire serpent). There are storytelling sessions where families gather to share Saci’s tales and other folklore legends, keeping the Brazilian mythical world alive during Halloween.</p>
+
+    <h2>Haunted Houses and Horror Experiences</h2>
+    <p>While theme parks like Hopi Hari and Beto Carrero World feature Halloween-themed events, there are also pop-up haunted houses that take a Brazilian horror approach. These might feature not just international ghosts, but folklore monsters like Zé do Caixão, a character from Brazilian horror films.</p>
+
+    <h3>Immersive Experiences</h3>
+    <p>Some cities, like São Paulo, organize immersive horror experiences where participants are fully engaged in spooky scenarios inspired by Brazilian myths and horror films. This could include a haunted forest experience based on A Ilha do Medo, a Brazilian horror story, or visits to abandoned colonial houses that are said to be haunted by ghosts from Brazil’s history.</p>
+</div>
+
+<footer>
+    <p>&copy; Made by Iurascu Iulian.</p>
+</footer>
+
 </body>
 </html>
